@@ -1,0 +1,42 @@
+<div class="row border-bottom">
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="icon-align-justify"></i> </a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li>
+                <span class="text-muted welcome-message"><a href="index.html" title="返回首页"><i class="fa fa-home"></i></a>欢迎使用H+后台主题</span>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="javascript:;">
+                    <i class=" icon-envelope"></i>  <span class="label label-warning">{{topFQA.dataLength}}</span>
+                </a>
+                <ul class="dropdown-menu dropdown-alerts">
+                    <li ng-repeat="item in topFQA.data">
+                        <a href="#/FQA/viewFQA&{{item.id}}">
+                            <i class="icon-envelope-alt"></i>
+                            <span>{{item.content}}</span>
+                            <span class="pull-right text-muted small">{{item.createdAt | dateDay}}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="#/FQA/list&0">
+                                <strong>查看所有 </strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="login.html">
+                    <i class="fa fa-sign-out"></i> 退出
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</div>

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="" ng-app="myAppModule">
+<head>
+	<meta charset="utf-8">
+	<title>Retina Dashboard</title>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
+	<link href="/resource/css/Font-Awesome-3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css" media="all" />
+	<link rel="stylesheet" href="/resource/css/typeSelect.css" media="all" />
+	<link rel="stylesheet" href="css/main.css" media="all" />
+
+	<script src="/resource/js/libs/jquery.base.js"></script>
+	<script src="/resource/js/libs/echarts/echarts-all.js"></script>
+
+
+	<script src="/resource/js/libs/kindeditor/kindeditor.js"></script>
+	<script src="/resource/js/libs/kindeditor/lang/zh_CN.js"></script>
+	<script src="/resource/js/libs/validate.js"></script>
+	<script src="/resource/js/base/formValidate.js"></script>
+	<script src="/resource/js/base/charts.js"></script>
+
+	<script src="/resource/js/base/widget.js"></script>
+	<script src="/resource/js/base/typeSelect.js"></script>
+	<script src="/resource/js/libs/angular.min.js"></script>
+	<script src="/resource/js/libs/angular-animate.js"></script>
+	<script src="/resource/js/libs/angular-ui-router.js"></script>
+
+	<script src="js/controller.js"></script>
+	<script src="/resource/js/directives.js"></script>
+	<script src="/resource/js/filters.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/model/FQA/FQAController.js"></script>
+	<script src="js/model/FQA/viewFQAController.js"></script>
+	<script src="js/model/articles/articlesListController.js"></script>
+	<script src="js/model/articles/articlesSelectController.js"></script>
+	<script src="js/model/articles/articlesViewController.js"></script>
+	<script src="js/model/articles/articlesEditorController.js"></script>
+
+	<script src="resource/js/pace.min.js"></script>
+	<script src="resource/js/hplus.js"></script>
+</head>
+<body>
+
+<div class="bodyLay" id="indexController" ng-controller="indexController">
+	<div ng-include src="'left.html'"></div>
+	<div id="page-wrapper" class="gray-bg dashbard-1">
+		<div ng-include src="'top.html'"></div>
+		<div ui-view="commonView"></div>
+	</div>
+	<div id="gritter-notice-wrapper"><div id="gritter-item-1" class="gritter-item-wrapper" style="" role="alert"><div class="gritter-top"></div><div class="gritter-item"><a class="gritter-close" href="#" tabindex="1" style="display: none;">Close Notification</a><div class="gritter-without-image"><span class="gritter-title">您有2条未读信息</span><p>请前往<a href="mailbox.html" class="text-warning">收件箱</a>查看今日任务</p></div><div style="clear:both"></div></div><div class="gritter-bottom"></div></div></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	font-size:12px;
+	line-height:20px;
+    font-family: "Microsoft YaHei";
+}
+
+a{
+	color:#000;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+ul{
+	list-style:none;
+}
+.cf:before, .cf:after {content:"";display:table;}
+.cf:after {clear:both;}
+.cf {zoom:1;}
+.clear{width:0;height:0;clear:both;overflow:hidden;}
+
+img{
+	border:none;
+}
+p{word-break: break-all;}
+.hidden{display: none !important;}
+
+
+

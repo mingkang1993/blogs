@@ -1,0 +1,90 @@
+
+/********label select style***********/
+#issueTypeDescription{
+    font-weight: bolder;
+    color: #444;
+    font-family: microsoft yahei;
+    float:left;
+    overflow:auto;
+    padding:6px;
+    width:92%;
+    min-height:16px;
+    _height:16px;
+    line-height:1.4em;
+    border-radius:1px;
+    border: 1px solid #ccc;
+    background: #fff;
+
+}
+
+#issueTypeDescription .iLabel{
+
+    background:#dededf url('../img/xx.png') right center no-repeat;
+    display:inline-block;*zoom:1;*display:inline;
+    margin-right: 5px;
+    margin-bottom:3px;
+    padding: 0 16px 0 6px;
+    height:20px;line-height:20px;
+    cursor:pointer;
+}
+#issueTypeDescription strong{
+    display:inline-block;*zoom:1;*display:inline;
+    margin-bottom:3px;
+}
+#issueTypeDescription .subBox{
+    line-height:20px;
+    margin-bottom:3px;
+}
+
+
+#ITD_dlg{
+    position:absolute;
+    left:205px;
+    top:29px;
+    z-index:100;
+    overflow:hidden;
+    width:672px;
+    border:1px solid #c6c6c6;
+    background:#FFFEEB;
+    color:#807c7d;
+    font-family:'microsoft yahei';
+}
+#ITD_dlg .form-check-text{
+    margin-top:-1px;
+    float:left;
+    padding: 8px 3px;
+    font-weight:bold;
+    width:65px;
+    color: #5A5A5A;
+    border-top:1px solid #fff;
+}
+#ITD_dlg ul{
+    margin-top:-1px;
+    padding: 3px 5px;
+    overflow:hidden;
+    zoom:1;
+    width:100%;
+    border-top:1px solid #ebebeb;
+}
+#ITD_dlg ul li{
+    float:left;
+    display:inline;
+
+}
+#ITD_dlg ul label{
+    display:inline-block;*zoom:1;*display:inline;
+    padding: 3px;
+    min-width: 105px;
+    margin-right: 5px;
+}
+#ITD_dlg ul input{
+    margin-right:3px;
+    vertical-align:middle;
+}
+#issueContent{
+    width:97.5%;
+    line-height:1.4em;
+}
+
+.chooseDlgTop .title{font-size:14px;margin:0px;margin-left:10px;}
+.chooseDlgTop .closeMyLab{ position:absolute;right:10px;top:10px;}

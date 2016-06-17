@@ -1,0 +1,14 @@
+
+<form method="post" action="/articlesList/addNav" class="form-horizontal ng-pristine ng-valid" form-validate>
+    <input type="text" name="username" ng-model="$parent.cookieName" class="hidden ng-pristine ng-valid">
+
+    <div class="form-group cf ng-scope">
+    <label class="col-sm-1 control-label">标题:<i>*</i></label>
+    <div class="col-sm-5">
+        <input type="text" name="sortName" class=" form-control form-txt {required:true,minlength:2,maxlength:16,messages:{required:'请输入部门名称',minlength:$.format('部门名称最少输入2位'),maxlength:$.format('部门名称最多输入16位')}}">
+    </div>
+        <button type="submit" class="btn btn-success">确定提交</button>
+</div>
+
+</form>
+

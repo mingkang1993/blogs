@@ -1,0 +1,30 @@
+<div class="kyContent UserLog">
+    <div class="UserTop">
+        <h1>找回密码</h1>
+    </div>
+    <form id="formUser" method="post" action="/opinion" class="form-horizontal " form-validate>
+        <div class="form-group cf">
+            <label class="col-sm-1 control-label">用户名:<i>*</i></label>
+            <div class="col-sm-9">
+                <input type="text" name = "username" ng-model="username"
+                       class=" form-control form-txt {required:true,minlength:2,maxlength:16,messages:{required:'请输入用户名称',minlength:$.format('用户名称最少输入2位'),maxlength:$.format('用户名称最多输入16位')}}"
+                        >
+            </div>
+        </div>
+        <div class="form-group cf">
+            <label class="col-sm-1 control-label">验证码:<i>*</i></label>
+            <div class="col-sm-9">
+                <div value-code class="valueCodeLay">
+                    <input type="text"  id="validCode" name = "valueCode" ng-model="valueCode" class="form-control col-sm-2 form-txt {required:true,minlength:2,maxlength:16,messages:{required:'请输入验证码',minlength:$.format('验证码最少输入2位'),maxlength:$.format('验证码最多输入16位')}}"
+                            />
+                </div>
+                <div value-code class="valueCodeLay col-xs-2 userCode">
+                    <div ccap-code>这里是验证码</div>
+                </div>
+            </div>
+        </div>
+        <input type="text" class="hidden" name="code" ng-model="code" id="codeVal">
+        <button class="btn btn-success col-sm-offset-2">确定提交</button>
+    </form>
+
+</div>

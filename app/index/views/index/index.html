@@ -1,0 +1,81 @@
+<div class="row">
+    <!-- start of page content -->
+    <div class="span8 page-content">
+
+        <!-- Basic Home Page Template -->
+        <div class="row separator">
+            <section class="span4 articles-list">
+                <h3>最新发布Featured Articles</h3>
+                <ul class="articles">
+                    <li class="article-entry standard" ng-repeat="data in createdAtDara">
+                        <h4>
+                            <a href="#/articles/viewContent&{{data.id}}">{{data.title}}</a>
+                        </h4>
+                        <div class="post-meta clearfix">
+                            <span class="date">{{data.createdAt | dateFilter}}</span>
+                            <span class="category" ng-if="data.user_name == $parent.cookieName"><a href="#/articles/editor&{{data.id}} " title="修改">修改</a></span>
+                            <span class="comments"><a href="#" title="Comment on Integrating WordPress with Your Website">3
+                                Comments</a></span>
+                            <span>作者:<strong>{{data.user_name}}</strong></span>
+                            <span class="like-count" ng-click="praise(data.id,data.praise_num)">{{data.praise_num | numPraise}}</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section class="span4 articles-list">
+                <h3>最热回复Latest Articles</h3>
+                <ul class="articles">
+                    <li class="article-entry standard">
+                        <h4><a href="single.html">Integrating WordPress with Your Website</a></h4>
+                        <span class="article-meta">25 Feb, 2013 in <a href="#"
+                                                                      title="View all posts in Server &amp; Database">Server
+                            &amp; Database</a></span>
+                        <span class="like-count">66</span>
+                    </li>
+                    <li class="article-entry standard">
+                        <h4><a href="single.html">Using Javascript</a></h4>
+                        <span class="article-meta">25 Feb, 2013 in <a href="#"
+                                                                      title="View all posts in Advanced Techniques">Advanced
+                            Techniques</a></span>
+                        <span class="like-count">18</span>
+                    </li>
+                    <li class="article-entry image">
+                        <h4><a href="single.html">Using Images</a></h4>
+                        <span class="article-meta">25 Feb, 2013 in <a href="#"
+                                                                      title="View all posts in Designing in WordPress">Designing
+                            in WordPress</a></span>
+                        <span class="like-count">7</span>
+                    </li>
+                    <li class="article-entry video">
+                        <h4><a href="single.html">Using Video</a></h4>
+                        <span class="article-meta">24 Feb, 2013 in <a href="#"
+                                                                      title="View all posts in WordPress Plugins">WordPress
+                            Plugins</a></span>
+                        <span class="like-count">7</span>
+                    </li>
+                    <li class="article-entry standard">
+                        <h4><a href="single.html">WordPress Site Maintenance</a></h4>
+                        <span class="article-meta">24 Feb, 2013 in <a href="#"
+                                                                      title="View all posts in Website Dev">Website
+                            Dev</a></span>
+                        <span class="like-count">15</span>
+                    </li>
+                    <li class="article-entry standard">
+                        <h4><a href="single.html">WordPress CSS Information and Techniques</a></h4>
+                        <span class="article-meta">24 Feb, 2013 in <a href="#"
+                                                                      title="View all posts in Theme Development">Theme
+                            Development</a></span>
+                        <span class="like-count">1</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!-- end of page content -->
+
+
+    <div ng-include="'views/include/paiHang.html'"></div>
+
+</div>

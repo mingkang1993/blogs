@@ -1,0 +1,59 @@
+<!doctype html>
+<html ng-app="myAppModule">
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>统一问题平台</title>
+    <link rel="shortcut icon" href="images/favicon.png"/>
+    <!-- Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="style/base/reset.css" />
+    <link rel='stylesheet' href='style/bootstrap.css' type='text/css' media='all'/>
+    <link rel="stylesheet" href="/resource/js/libs/kindeditor/themes/default/default.css" />
+    <link rel='stylesheet' id='responsive-css-css' href='style/responsive.css' type='text/css' media='all'/>
+    <link rel="stylesheet" type="text/css" href="style/tips.css" />
+    <link rel="stylesheet" href="/resource/css/typeSelect.css" media="all" />
+    <link rel='stylesheet' id='main-css-css' href='style/base/main.css' type='text/css' media='all'/>
+
+    <script src="/resource/js/libs/jquery.base.js"></script>
+    <script src="/resource/js/libs/kindeditor/kindeditor.js"></script>
+    <script src="/resource/js/libs/kindeditor/lang/zh_CN.js"></script>
+    <script src="/resource/js/libs/validate.js"></script>
+    <script src="/resource/js/base/formValidate.js"></script>
+    <script src="/resource/js/libs/3D/modernizr.js"></script>
+    <script src="/resource/js/libs/3D/jquery.gallery.js"></script>
+
+    <script src="/resource/js/libs/angular.min.js"></script>
+    <script src="/resource/js/libs/angular-animate.js"></script>
+    <script src="/resource/js/libs/angular-ui-router.js"></script>
+    <script src="/resource/js/base/typeSelect.js"></script>
+    <script src="/resource/js/base/widget.js"></script>
+    <script src="/resource/js/base/charts.js"></script>
+
+    <script src="js/controller.js"></script>
+    <script src="js/model/regController.js"></script>
+    <script src="js/model/article/editController.js"></script>
+    <script src="js/model/article/listController.js"></script>
+    <script src="js/model/article/viewController.js"></script>
+    <script src="js/model/personal/personalListContent.js"></script>
+    <script src="js/model/personal/personalIfnController.js"></script>
+
+
+    <script src="/resource/js/filters.js"></script>
+    <script src="/resource/js/directives.js"></script>
+    <script src="/resource/js/factory.js"></script>
+    <script src="js/services.js"></script>
+
+</head>
+<body>
+<div class="bodyLay" ng-controller="indexController">
+    <div ng-include src="'top.html'"></div>
+    <div class="page-container">
+        <div class="container">
+            <div ui-view="commonView"></div>
+        </div>
+    </div>
+    <div ng-include src="'bottom.html'"></div>
+</div>
+</body>
+</html>

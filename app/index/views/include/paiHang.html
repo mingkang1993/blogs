@@ -1,0 +1,33 @@
+<!-- start of sidebar -->
+<aside class="span4 page-sidebar" ng-controller="paiHangController">
+
+    <section class="widget">
+        <div class="support-widget">
+            <h3 class="title">发表文章</h3>
+            <p class="intro">走过的路多了，填过的坑也多了，来分享分享吧！！！</p>
+            <a href="#/articles/editor&add" class="btn btn-success col-sm-offset-5">点击发表文章</a>
+        </div>
+    </section>
+
+    <section class="widget">
+        <h3 class="title">标签</h3>
+        <div class="tagcloud">
+            <a href="#/articles/articlesList&wzList&0" class="btn btn-mini" ng-click="listNavClick(0)">全部</a>
+            <a href="#/articles/articlesList&wzList&{{navName.id}}" class="btn btn-mini" ng-click="listNavClick(navName.id)" ng-repeat="navName in navNames">{{navName.sortName}}</a>
+        </div>
+    </section>
+
+    <section class="widget">
+        <h3 class="title">点赞排行榜</h3>
+        <ul class="articles">
+            <li class="article-entry standard" ng-repeat="data in artPraiseCx">
+                <h4><a href="#/articles/viewContent&{{data.id}}">{{data.title}}</a></h4>
+                            <span class="article-meta">{{data.createdAt | dateFilter}}<a href="#" title="View all posts in Server &amp; Database">Server
+                                &amp; Database</a></span>
+                <span class="like-count" ng-click="$parent.praise(data.id,data.praise_num)">{{data.praise_num | numPraise}}</span>
+            </li>
+        </ul>
+    </section>
+
+</aside>
+<!-- end of sidebar -->

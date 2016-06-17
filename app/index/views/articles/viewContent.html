@@ -1,0 +1,111 @@
+
+<!-- Start of Page Container -->
+<div class="page-container">
+<div class="container">
+<div class="row">
+
+<!-- start of page content -->
+<div class="span8 main-listing">
+
+    <article class="format-standard type-post hentry clearfix">
+
+        <header class="clearfix">
+
+            <h3 class="post-title">
+                <a href="javascript:;"> {{datas.title}}</a>
+            </h3>
+            <div class="listNav">
+                <a href="#/articles/articlesList&wzList&{{nav.id}}" ng-repeat="nav in datas.label_sorts">{{nav.sortName}}</a>
+            </div>
+            <div class="post-meta clearfix">
+                <span class="date">{{datas.createdAt | dateFilter}}</span>
+                <span class="category" ng-if="$parent.cookieName === datas.user_name"><a href="#/articles/editor&{{datas.id}}">修改</a></span>
+                <span class="like-count" ng-click="$parent.praise(datas.id,datas.praise_num)">{{datas.praise_num | numPraise}}</span>
+            </div>
+            <!-- end of post meta -->
+
+        </header>
+
+        <div>
+            <div ng-bind-html-unsafe="datas.content" class="viewContainer"></div>
+        </div>
+
+    </article>
+
+    <div class="hfck">
+        <ul>
+            <li ng-repeat="data in comments">
+                <div class="imgLay">
+                    <img src="/uploads/images/{{data.head_pnd}}">
+                    <a href="/uploads/images/{{data.file}}" ng-if="data.file != null">下载文件</a>
+                </div>
+
+                <div class="content">
+                    <p><span class="userName">{{data.user_name}}</span><span class="date">{{data.createdAt | dateFilter}}</span></p>
+                    <p class="contentP"><span ng-bind-html-unsafe="data.content"></span><a href="javascript:;" ng-click="replyClick($index)">回复</a></p>
+                </div>
+                <div class="hfck">
+                    <ul>
+                        <li class="hfChidLi" ng-repeat="dataChid in data.comments2s">
+                            <div class="imgLay">
+                                <img src="/uploads/images/{{dataChid.head_pnd}}">
+                            </div>
+                            <div class="content">
+                                <p><span class="userName">{{dataChid.user_name}}</span><span class="date">{{dataChid.createdAt | dateFilter}}</span></p>
+                                <p class="contentP"><span ng-bind-html-unsafe="dataChid.content"></span><a href="javascript:;" class="hfAClick" ng-click="replyChidClick(data.id,$index)">回复</a></p>
+                            </div>
+                            <div class="hfClick {{chidIndex == $index && parIndex == data.id ? 'on' : ''}}">
+                                <form action="/articlesList/commentsToCreat" method="post" form-validate>
+                                    <input type="text" name = "commentId" ng-model="data.id" class="hidden">
+                                    <input type="text" name = "headPnd" ng-model="$parent.userDatas.headPng" class="hidden">
+                                    <input type="text" name = "username" ng-model="$parent.cookieName" class="hidden">
+                                    <textarea name="content" class="editor" style="width:665px;height:100px;"></textarea>
+                                    <button  class="btn btn-success ">点击发表文章</button>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hfClick {{index == $index ? 'on' : ''}}">
+                    <form action="/articlesList/commentsToCreat" method="post" form-validate>
+                        <input type="text" name = "commentId" ng-model="data.id" class="hidden">
+                        <input type="text" name = "headPnd" ng-model="$parent.userDatas.headPng" class="hidden">
+                        <input type="text" name = "username" ng-model="$parent.cookieName" class="hidden">
+                        <textarea name="content" class="editor" style="width:745px;height:150px;"></textarea>
+                        <button  class="btn btn-success ">点击发表文章</button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <form action="/articlesList/comments" method="post" form-validate>
+        <input type="text" name = "headPnd" ng-model="$parent.userDatas.headPng" class="hidden">
+        <input type="text" name = "username" ng-model="$parent.cookieName" class="hidden">
+        <input type="text" name = "atrId" ng-model="model" class="hidden">
+        <h2>回复</h2>
+        <input type="file" name="file">
+        <textarea name="content" class="editor" style="width:780px;height:200px;">
+
+        </textarea>
+        <button  class="btn btn-success ">点击发表文章</button>
+    </form>
+
+
+    <div id="pagination">
+        <a href="#" class="btn active">1</a>
+        <a href="#" class="btn">2</a>
+        <a href="#" class="btn">3</a>
+        <a href="#" class="btn">Next »</a>
+        <a href="#" class="btn">Last »</a>
+    </div>
+
+</div>
+<!-- end of page content -->
+
+    <div ng-include="'views/include/paiHang.html'"></div>
+
+</div>
+</div>
+</div>
+<!-- End of Page Container -->

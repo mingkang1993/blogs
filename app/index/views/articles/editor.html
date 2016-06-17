@@ -1,0 +1,102 @@
+<div class="kyContent UserLog">
+    <div class="UserTop">
+        <h1 ng-if="model ==  'add'">发表笔记</h1>
+        <h1 ng-if="model != 'add'">修改笔记</h1>
+    </div>
+    <form method="post" action="{{ model == 'add' ? '/addArticle' : '/upArticle'}}" class="form-horizontal" form-validate>
+        <input type="text" name = "username" ng-model="$parent.cookieName" class="hidden">
+        <input type="text" name = "id" ng-model="model" class="hidden" ng-if="model != 'add'">
+
+        <div class="form-group cf">
+            <label class="col-sm-1 control-label">标题:<i>*</i></label>
+            <div class="col-sm-5">
+                <input type="text" name = "title" ng-model="contents.title"
+                       class=" form-control form-txt {required:true,minlength:2,maxlength:16,messages:{required:'请输入部门名称',minlength:$.format('部门名称最少输入2位'),maxlength:$.format('部门名称最多输入16位')}}"
+                        >
+            </div>
+        </div>
+
+        <div class="form-group cf">
+            <label class="col-sm-1 control-label">内容:<i>*</i></label>
+            <div class="col-sm-9">
+                <!-- <textarea name="content" style="width:500px;height:300px;"  ng-model="contents.content">
+
+
+                </textarea>
+                -->
+                <textarea id="editor" name="content" class="editor" style="width:980px;height:400px;" ng-model="contents.content">
+
+                </textarea>
+            </div>
+        </div>
+
+
+        <div class="form-group cf" style="position:relative;">
+            <label class="col-sm-1 control-label">标签:<i>*</i></label>
+            <div class="col-sm-9">
+                <div id="issueTypeDescription" name="typeNames"></div>
+                <span class="rightBar" ng-click="addLabel()">
+                    添加新标签
+                </span>
+            </div>
+
+            <div id="ITD_dlg" style="display: none;">
+                <div class="chooseDlgTop cf" style="position:relative;">
+                    <a href="javascript:;" id="objectSelectBoxClose" class="closeMyLab">我选好了</a>
+                    <h3 class="title">标签选择（可多选）</h3>
+                </div>
+
+                <div class="multipeSelect">
+                    <input style="display:none;" id="issueTypeSelector0" name="" type="checkbox" class="category" value=".">
+
+                    <ul id="itype0" class="zc-sf">
+
+                        <li ng-repeat="nav in navNames" id="" ng-click="">
+                            <label>
+                                <input name="selecttype" type="checkbox" value="{{nav.id}}" ><span>{{nav.sortName}}</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="form-group cf">
+            <label class="col-sm-1 control-label">验证码:<i>*</i></label>
+            <div class="col-sm-9">
+                <div value-code class="valueCodeLay">
+                    <input type="text"  id="validCode" name = "valueCode" ng-model="valueCode" class="form-control col-sm-2 form-txt {required:true,minlength:2,maxlength:16,messages:{required:'请输入验证码',minlength:$.format('验证码最少输入2位'),maxlength:$.format('验证码最多输入16位')}}"
+                            />
+                </div>
+                <div value-code class="valueCodeLay col-xs-2 userCode">
+                    <div ccap-code>这里是验证码</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+        <div class="form-group">
+            <label class="col-sm-1 control-label">上传文件:</label>
+            <div class="col-sm-9 uploda">
+                <div customUploadfile id="fileContent">这里是上传组件</div>
+            </div>
+        </div>
+        -->
+
+        <button type="submit" class="btn btn-success col-sm-offset-2">确定提交</button>
+
+    </form>
+
+</div>
+
+<script>
+    $(function() {
+        $.typeSelect();
+        setTimeout(function(){
+            var editor = KindEditor.create('#editor',{
+                uploadJson: '/uploadImg'
+            });
+        })
+
+    })
+</script>

@@ -1,0 +1,34 @@
+<!-- Start of Page Container -->
+<div class="row" id="row-container">
+    <!-- start of page content -->
+    <div class="span8 main-listing">
+
+        <article ng-repeat="data in articleDatas" class="format-standard type-post hentry clearfix">
+            <header class="clearfix">
+                <h3 class="post-title">
+                    <a href="#/articles/viewContent&{{data.id}}">{{data.title}}</a>
+                </h3>
+                <div class="listNav" ng-if="id == 0 || model == 'selectList'">
+                    <a href="#/articles/articlesList&articlesList&{{nav.id}}" ng-repeat="nav in data.label_sorts">{{nav.sortName}}</a>
+                </div>
+                <div class="post-meta clearfix">
+                    <span class="date">{{data.createdAt | dateFilter}}</span>
+                            <span class="category" ng-if="data.user_name == $parent.cookieName"><a href="#/articles/editor&{{data.id}} " title="修改">修改</a></span>
+                            <span class="comments"><a href="#" title="Comment on Integrating WordPress with Your Website">一共{{data.comments.length}}条评论</a></span>
+                            <span>作者:<strong><a href="#/personal/listContent&{{data.user_name}}">{{data.user_name}}</a></strong></span>
+                    <span class="like-count" ng-click="$parent.praise(data.id,data.praise_num)">{{data.praise_num | numPraise}}</span>
+                </div>
+                <!-- end of post meta -->
+
+            </header>
+
+            <div ng-bind-html-unsafe="data.content" class="listRowMain"></div>
+        </article>
+
+        <div id="pages">这里是分页组件</div>
+
+    </div>
+    <!-- end of page content -->
+
+    <div ng-include src="'views/include/paiHang.html'"></div>
+</div>

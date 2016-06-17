@@ -1,0 +1,40 @@
+<div class="mainContent">
+    <aside>
+        <div class="avatar">
+            <a href="#">
+                <img ng-src="/uploads/images/{{userDatas.headPng}}" />
+                <span>{{userDatas.user}}</span>
+            </a>
+        </div>
+        <section class="topspaceinfo">
+            <h1>个性签名</h1>
+            <p ng-if="userDatas.information === null">您还没有签名</p>
+            <p ng-if="userDatas.information != null" ng-bind-html-unsafe="userDatas.information"></p>
+        </section>
+        <section class="newpic">
+            <h2>最近访问</h2>
+            <ul>
+                <li ng-repeat="item in recordsData">
+                    <a href="javascript:;" title="{{item.user_name}}">
+                        <img  ng-src="/uploads/images/{{item.head_png}}">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class="blogitem">
+        <article ng-repeat="item in listData">
+            <div class="title">
+                <a href="javascript:;">{{item.title}}</a>
+                <span ng-repeat="nav in item.label_sorts">{{nav.sortName}}</span>
+            </div>
+            <div class="text" ng-bind-html-unsafe="item.content">
+                这是内容
+            </div>
+            <div class="textfoot">
+                <a href="javascript:;">阅读全文</a><a href="javascript:;">点赞：{{item.praise_num | numPraise}}</a><span>创建时间：{{item.createdAt | dateFilter}}</span><span>回复：{{item.comments.length}}条</span>
+            </div>
+        </article>
+    </div>
+</div>
+<div id="pages">这里是分页组件</div>

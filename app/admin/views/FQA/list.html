@@ -1,0 +1,55 @@
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="animated fadeInRight">
+            <div class="mail-box-header">
+
+                <form method="post" action="/admin/FQA/selete" class="pull-right mail-search" form-validate>
+                    <div class="input-group">
+                        <input type="text" class="form-control input-sm" name="val" placeholder="搜索邮件标题，正文等">
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-sm btn-primary">搜索</button>
+                        </div>
+                    </div>
+                </form>
+                <h2>
+                    收件箱
+                </h2>
+                <div class="mail-tools tooltip-demo m-t-md">
+                    <div class="btn-group pull-right">
+                        <button class="btn btn-white btn-sm"><i class="fa fa-arrow-left"></i>
+                        </button>
+                        <button class="btn btn-white btn-sm"><i class="fa fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+                    <a class="btn btn-white btn-sm" href="#/FQA/list&0"><i class="icon-folder-open"></i> 全部</a>
+                    <a class="btn btn-white btn-sm" href="#/FQA/list&1"><i class="icon-eye-close"></i> 未读</a>
+                    <a class="btn btn-white btn-sm" href="#/FQA/list&2"><i class="icon-eye-open"></i> 已读</a>
+
+                </div>
+            </div>
+            <div class="mail-box">
+
+                <table class="table table-hover table-mail">
+                    <tbody>
+                        <tr class="unread">
+                            <td width="15%">用户名</td>
+                            <td width="40%">内容</td>
+                            <td width="15%">qq</td>
+                            <td width="15%">email</td>
+                            <td width="15%">时间</td>
+                        </tr>
+                        <tr class="read"  ng-repeat="item in listData">
+                            <td><a href="#/FQA/viewFQA&{{item.id}}" style="display: block;">{{item.user_name}}</a></td>
+                            <td>{{item.content}}</td>
+                            <td>{{item.qq}}</td>
+                            <td>{{item.email}}</td>
+                            <td>{{item.createdAt | dateFilter}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="pages">这里是分页组件</div>
+        </div>
+    </div>
+</div>

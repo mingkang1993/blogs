@@ -1,0 +1,39 @@
+<div class="animated fadeInRight">
+    <div class="mail-box-header">
+        <h2>
+            查看邮件
+        </h2>
+        <div class="mail-tools tooltip-demo m-t-md">
+            <h3>
+                <span class="font-noraml">主题： </span>建议优化
+            </h3>
+            <h5>
+                <span class="pull-right font-noraml">{{viewData.createdAt | dateFilter}}</span>
+                <p class="font-noraml">发件人： {{viewData.user_name}}</p>
+                <p class="font-noraml">qq： {{viewData.qq}}</p>
+                <p class="font-noraml">email： {{viewData.email}}</p>
+            </h5>
+        </div>
+    </div>
+    <div class="mail-box">
+
+        <div class="mail-body">
+            <h4>尊敬的管理员：</h4>
+            <p>
+                {{viewData.content}}
+            </p>
+            <p class="text-right">
+                致辞
+            </p>
+        </div>
+
+        <form action="/admin/FQA/delete" method="post" class="mail-body text-right tooltip-demo" form-validate>
+            <input type="text" class="hidden" ng-model="viewData.id" name="id">
+            <a class="btn btn-sm btn-white" href="#/FQA/list&0"><i class="fa fa-reply"></i> 返回</a>
+            <button title="" class="btn btn-sm btn-white"><i class="fa fa-trash-o"></i> 删除</button>
+        </form>
+        <div class="clearfix"></div>
+
+
+    </div>
+</div>

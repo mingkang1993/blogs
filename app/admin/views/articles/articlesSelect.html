@@ -1,0 +1,37 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <h2>
+                        为您找到相关结果约{{dataLength}}个： <span class="text-navy">“{{val}}”</span>
+                    </h2>
+                    <small>搜索用时  (0.23秒)</small>
+
+                    <div class="search-form">
+                        <form action="index.html" method="get">
+                            <div class="input-group">
+                                <input type="text" placeholder="后台主题" name="search" class="form-control input-lg" ng-model="val">
+                                <div class="input-group-btn">
+                                    <a href="#/articles/articlesSelect&{{val}}" class="btn btn-lg btn-primary" type="submit">
+                                        搜索
+                                    </a>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="search-result {{$index == 0 ?'search-up':''}}" ng-repeat="item in articleData">
+                        <a href="#/articles/articlesView&{{item.id}}">
+                            <h3>{{item.title}}</h3>
+                            <p class="search-link">作者：{{item.user_name}}</p>
+                            <div class="content" ng-bind-html-unsafe="item.content"></div>
+                        </a>
+                    </div>
+                </div>
+                <div id="pages"></div>
+            </div>
+        </div>
+    </div>
+
+</div>

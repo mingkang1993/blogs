@@ -1,0 +1,43 @@
+<div class="kyContent UserLog">
+    <!-- Page wrap -->
+    <div class="datumListLay">
+        <div id="pageWrap" calss="pageWrap">
+            <!-- Dynamic Background -->
+            <div class="pageTitle">
+                <h1>意见箱</h1>
+                <span>哪里做的不对请给我们反馈</span>
+            </div>
+            <!-- side content -->
+            <div id="side-content">
+                <p>感谢您使用本平台！请告诉我们您对本平台的意见和建议，我们会参考您的反馈不断优化我们的产品和服务。（如有其他疑问和建议，请联系公司相关业务部门。）</p>
+                <h2 class="title-divider">Contact form</h2>
+                <!-- form -->
+                <form id="contactForm" action="/fqAdvice" method="post" class="form-group" form-validate>
+                     <input name="user_name" type="text" class="hidden" ng-model="$parent.cookieName"/>
+                    <div class="col-xs-8 has-warning marginBottom">
+                        <label class="control-label marginBottom">Email</label>
+                        <input name="email" type="text" class=" form-control form-txt {required:true,email:true,minlength:5,messages:{required:'请输入邮箱名称',minlength:$.format('邮箱名称最少输入5位')}}"
+                                />
+                    </div>
+                    <div  class="col-xs-8 has-error">
+                        <label class="control-label marginBottom">QQ</label>
+                        <input name="qq" type="text" class=" form-control form-txt {required:true,digits:true,minlength:4,maxlength:16,messages:{required:'请输入QQ号',minlength:$.format('QQ号最少输入4位'),maxlength:$.format('部门名称最多输入16位')}}"
+                                />
+                    </div>
+                    <div  class="col-xs-10 has-success marginBottom">
+                        <label class="control-label marginBottom">Website</label>
+                        <textarea  name="content" rows="5" cols="20" class=" form-control form-txt {required:true,minlength:2,messages:{required:'请输入内容名称',minlength:$.format('内容最少输入2位')}}"
+                                ></textarea>
+                    </div>
+                    <div  class="col-xs-12 marginBottom">
+                        <button class="btn btn-success">提交</button>
+                    </div>
+                </form>
+                <!-- ENDS form -->
+
+            </div>
+            <!-- ENDS side content -->
+        </div>
+    </div></form>
+
+</div>

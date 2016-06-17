@@ -1,0 +1,95 @@
+<div>
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>个人资料</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="#/index">主页</a>
+                </li>
+                <li>
+                    <a>页面</a>
+                </li>
+                <li>
+                    <strong>个人资料</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-2">
+
+        </div>
+    </div>
+    <div class="wrapper wrapper-content">
+        <div class="row animated fadeInRight">
+            <div class="col-md-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>个人资料</h5>
+                    </div>
+                    <div>
+                        <div class="ibox-content no-padding border-left-right">
+                            <img alt="image" class="img-responsive" ng-src="/uploads/images/{{dynamicData[0].head_png}}">
+                        </div>
+                        <div class="ibox-content profile-content">
+                            <h4><strong>Beaut-zihan</strong></h4>
+                            <p><i class="fa fa-map-marker"></i> 上海市闵行区绿地科技岛广场A座2606室</p>
+                            <h5>
+                                关于我
+                            </h5>
+                            <p>
+                                会点前端技术，div+css啊，jQuery之类的，不是很精；热爱生活，热爱互联网，热爱新技术；有一个小的团队，在不断的寻求新的突破。
+                            </p>
+                            <div>
+                                <h5><strong>169</strong> 文章</h5>
+                            </div>
+                            <form action="/admin/user_delete" method="post" class="row user-button" form-validate>
+                                <input type="text" name="id" class="hidden" ng-model="id">
+                                <input type="text" name="user_name" class="hidden" ng-model="dynamicData[0].user_name">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary btn-block">删除用户</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>最新动态</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div>
+                            <div class="feed-activity-list">
+                                <div class="feed-element" ng-repeat="data in dynamicData">
+                                    <a href="profile.html#" class="pull-left">
+                                        <img alt="image" class="img-circle" ng-src="/uploads/images/{{data.head_png}}">
+                                    </a>
+                                    <div class="media-body ">
+                                        <small class="pull-right">2小时前</small>
+                                        <strong>{{data.user_name}}</strong> 发表了文章
+                                        <p>{{data.articleTitle}}</p>
+                                        <small class="text-muted">{{data.articleCreatedAt | dateFilter}}</small>
+                                        <div class="well"ng-bind-html-unsafe="data.articleContent"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="pull-right">
+            By：<a href="http://www.zi-han.net" target="_blank">zihan's blog</a>
+        </div>
+        <div>
+            <strong>Copyright</strong> H+ &copy; 2014
+        </div>
+    </div>
+
+</div>
+</div>
+

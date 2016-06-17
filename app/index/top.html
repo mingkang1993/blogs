@@ -1,0 +1,72 @@
+<!-- Start of Header -->
+<div class="header-wrapper">
+    <header>
+        <div class="container">
+            <div class="logo-container cf">
+                <!-- Website Logo -->
+                <a href="index.html"  title="Knowledge Base Theme">
+                    <img src="images/logo.png" alt="Knowledge Base Theme">
+                </a>
+                <span class="tag-line">专注用户体验、 记录成长!</span>
+            </div>
+
+            <!-- Start of Main Navigation -->
+            <nav class="main-nav">
+                <div class="menu-top-menu-container nav">
+                    <ul id="menu-top-menu" class="clearfix">
+                        <li class="current-menu-item"><a href="#/articles/articlesList&wzList&0">首页</a></li>
+                        <!--<li><a href="#/articles/articlesList&wzList&0">文章列表</a></li> -->
+                        <li ng-if="userDatas.state == true">
+                            <a href="#/personal/listContent&{{userDatas.user}}">
+                                <span class="img"><img ng-src="/uploads/images/{{userDatas.headPng}}"></span>
+                                <strong>{{userDatas.user}}</strong>
+                            </a>
+                            <ul>
+                                <li><a href="#/personal/information">个人资料修改</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </li>
+
+                        <li ng-if="userDatas.state == true"><a href="#/upPassword">修改密码</a></li>
+                        <li ng-if="userDatas.state == true"><a href="#/FQA">FQA建议</a></li>
+                        <li ng-if="userDatas.state == true"><a href="javascript:;" ng-click="quitout()">退出</a></li>
+                        <li ng-if="userDatas.state != true"><a href="#/retrievePass">找回密码</a></li>
+                        <li ng-if="userDatas.state != true"><a href="#/reg&add">注册</a></li>
+                        <li ng-if="userDatas.state != true"><a href="#/reg&log">登陆</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End of Main Navigation -->
+
+        </div>
+    </header>
+</div>
+<!-- End of Header -->
+
+<!-- Start of Search Wrapper -->
+<div class="search-area-wrapper">
+    <div class="mainBanner">
+        <div class="move">
+            <div class="search-area container">
+                <!--
+                 <h1 class="move">
+                     <span class="myLogo">
+                         Have a Question?
+                         <a href="">Have a Question?</a>
+                          <p class="searchNotice">有什么疑难问题吗？有什么困惑不解吗？可以在下面的文本框输入进行搜索哦~</p>
+                     </span>
+
+                 </h1>
+                 -->
+                <form id="search-form" class="search-form clearfix" method="post" autocomplete="off" form-validate>
+                    <input class="search-term required" type="text" name="val" placeholder="请输入搜索内容" ng-model="$parent.selectArt" />
+                    <input class="search-btn" type="button" ng-click="submit()" value="Search" />
+                </form>
+            </div>
+        </div>
+        <span class="topStar"></span><span class="topMusic"></span><span class="topSunshine"></span><span class="topCloud"></span>
+   </div>
+
+</div>
+<!-- End of Search Wrapper -->
