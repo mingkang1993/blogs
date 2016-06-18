@@ -38,7 +38,7 @@ article.hasMany(praise, {constraints: false, onDelete: 'CASCADE',onUpdate:'CASCA
 //sort_connect.belongsTo(labelSort, {constraints: false});  //sort_connect属于article
 //sort_connect.belongsTo(article, {constraints: false});  //sort_connect属于article
 
-settings.sync().complete(function(err){
+settings.sync().then(function(err){
 
 });
 //article.sync();//同步数据库
