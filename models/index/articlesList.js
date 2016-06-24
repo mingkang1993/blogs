@@ -19,19 +19,25 @@ var comments2= commentsWj.comments2;
 
 
 app.post('/datumList/navname',function(req,res) {               //标签分类
-    if(req.body.model == "screening"){
-        labelSort.findAll().success(function (data) {
-            res.send(data);
-        }).error(function (err) {
-            console.log(err);
-        });
-    }else{
-        labelSort.findAll().success(function (data) {
-            res.send(data);
-        }).error(function (err) {
-            console.log(err);
-        });
-    }
+    // if(req.body.model == "screening"){
+    //     labelSort.findAll().success(function (data) {
+    //         res.send(data);
+    //     }).error(function (err) {
+    //         console.log(err);
+    //     });
+    // }else{
+    //     labelSort.findAll().success(function (data) {
+    //         res.send(data);
+    //     }).error(function (err) {
+    //         console.log(err);
+    //     });
+    // }
+
+    labelSort.findAll().success(function (data) {
+        res.send(data);
+    }).error(function (err) {
+        console.log(err);
+    });
 });
 
 

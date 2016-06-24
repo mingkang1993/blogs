@@ -70,24 +70,24 @@ app.post('/ccap/code',function(req,res) {
 app.use(function(req, res, next) {
     if(req.url.indexOf('h5') > -1){
         var viewName = req.url.substr(req.url.indexOf('h5') + 2 ,req.url.length);
-        res.sendfile('./app/app/h5/view' + viewName);
+        res.sendfile(path.join(__dirname, './app/app/h5/view' + viewName));
     }else{
         var err = new Error('Not Found');
         err.status = 404;
         next(err);
     }
 });
-
-if (app.get('env') === 'development') {
-    app.use(function(err, req, res, next) {
-        res.status(err.status || 500);
-        res.render('error', {
-            message: err.message,
-            error: err
-        });
-    });
-}
-
+//
+// if (app.get('env') === 'development') {
+//     app.use(function(err, req, res, next) {
+//         res.status(err.status || 500);
+//         res.render('error', {
+//             message: err.message,
+//             error: err
+//         });
+//     });
+// }
+//
 
 /*
 app.post('/indexArticleList',function(req,res) {   //首页最新发布

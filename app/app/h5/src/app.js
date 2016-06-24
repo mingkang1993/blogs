@@ -1,5 +1,17 @@
-/**
- * Created by kangdaye on 16/6/15.
- */
-var reactDom = require('react-dom');
-alert(1)
+import React from 'react';
+import * as run from './run/run';
+import httpResources from './run/httpResources';
+import * as type from './container/type';
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="mobile web app, mobile template, mobile design, mobile app design, mobile app theme, mobile wordpress theme, my mobile app" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<title>论坛列表页</title>
+</head>
+
+<body>
+<div class="main">
+    <div class="logo"><div class="img"><img src="img/logo.png"></div></div>
+    <div class="header">
+            <a href="#" class="go_left"><img src="img/go.png"></a>
+            <span>杂谈社区</span>
+            <a href="#" class="fa_left"><img src="img/fabu.png"></a>
+    
+    </div>
+    
+    <div class="wrap" >
+    		<UL id="container">
+            
+            <LI class="box" >
+            		<div class="author">
+                    		<a href="#"><img src="img/icon/icon2.png"></a>
+                            <p class="author_name">楼主：天边的小白</p>
+                            <p class="author_time">时间：5分钟前</p>
+                            <a href="#" class="close"><img src="img/close.png"></a>
+                    </div>
+                    <a href="#">
+                        <div class="topic">
+                            <div><img class="lazy" src="img/data.png"  data-original="img/photo/pho.jpg"></div>
+                            <p>三亚好好玩！三亚好好玩！</p>
+                            
+                        </div>
+                    </a>
+                    <div class="click_hf">
+                        <a class="zan"><img  src="img/zan1.png"></a>
+                        <span>15</span>
+                        <a  class="huifu"><img src="img/huifu.png"></a>
+                        <a  class="fenx"></a>                  
+                    </div>
+            
+            </LI>           
+           
+            </UL>
+            <ul id="test">
+            
+              <LI class="box" >
+            		<div class="author">
+                    		<a href="#"><img src="img/icon/icon2.png"></a>
+                            <p class="author_name">楼主:测试 测试</p>
+                            <p class="author_time">时间：5分钟前</p>
+                            <a href="#" class="close"><img src="img/close.png"></a>
+                    </div>
+                    <a href="#">
+                        <div class="topic">
+                            <div><img class="lazy" src="img/data.png"  data-original="img/photo/pho.jpg"></div>
+                            <p>三亚好好玩！三亚好好玩！</p>
+                            
+                        </div>
+                    </a>
+                    <div class="click_hf">
+                        <a class="zan"><img  src="img/zan1.png"></a>
+                        <span>15</span>
+                        <a  class="huifu"><img src="img/huifu.png"></a>
+                        <a  class="fenx"></a>                  
+                    </div>
+            
+            </LI>
+            </ul>
+     <h1 style="text-align:center">正在加载...</h1>  
+    
+    </div>
+    
+    
+</div>    
+
+</body>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.lazyload.js?v=1.9.1"></script>
+<script type="text/javascript">
+  $(function() {
+         $("img.lazy").lazyload({
+			 effect: "fadeIn",
+			 placeholder: "img/data.png",
+			 threshold :200
+			 });
+  });
+
+$(function(){
+	$(window).scroll(function(){
+			// 当滚动到最底部以上50像素时， 加载新内容
+		if ($(document).height() - $(this).scrollTop() - $(this).height() < 100){
+			$('#container').append($("#test").html());	
+			   $("img.lazy").lazyload({
+				   	 effect: "fadeIn",
+					  threshold :200
+				
+			 });	
+		}
+	});
+	
+});
+
+</script>
+</html>

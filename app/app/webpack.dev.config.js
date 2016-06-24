@@ -6,8 +6,8 @@ module.exports = {
   // context : __dirname,
   // entry: './js/entry.js',
   entry: [
-    'babel-polyfill',
-    path.join(__dirname, jsPath + "app.js")
+      'babel-polyfill',
+      path.join(__dirname, jsPath + "app.js")
     // 'webpack-dev-server/client?http://127.0.0.1:3000',
     // 'webpack/hot/only-dev-server',
   ],
@@ -22,11 +22,10 @@ module.exports = {
     // ],
     loaders: [
       { test: /\.js?$|\.jsx$/,
-        loader: 'babel?presets[]=es2015,presets[]=react',
+        loader: 'babel-loader',
         exclude: /(node_modules|bower_components)/,
         query: {
-          // "presets": ["es2015"],
-          "plugins": ["syntax-async-functions"]
+          "presets": ["es2015","react","stage-3"]
         }
       },
       { test: /\.css$/, loader: 'style!css' }
