@@ -6,9 +6,10 @@ module.exports = {
   // context : __dirname,
   // entry: './js/entry.js',
   entry: [
+    'babel-polyfill',
+    path.join(__dirname, jsPath + "app.js")
     // 'webpack-dev-server/client?http://127.0.0.1:3000',
     // 'webpack/hot/only-dev-server',
-     path.join(__dirname,jsPath + "app.js")
   ],
   output: {
     path: __dirname + '/h5/build/',
@@ -16,21 +17,37 @@ module.exports = {
     publicPath: __dirname + '/h5/build/'
   },
   module: {
+    // preLoaders: [
+    //   { test: /\.js$|\.jsx$/, loader: "eslint-loader", exclude: /node_modules/ }
+    // ],
     loaders: [
-      { test: /\.css$/, loader: 'style!css' },
-      { test:  /\.js|jsx$/, loaders: ['react-hot', 'jsx?harmony'], exclude: /node_modules/ }
+      { test: /\.js?$|\.jsx$/,
+        loader: 'babel?presets[]=es2015,presets[]=react',
+        exclude: /(node_modules|bower_components)/,
+        query: {
+          // "presets": ["es2015"],
+          "plugins": ["syntax-async-functions"]
+        }
+      },
+      { test: /\.css$/, loader: 'style!css' }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['', '.js', '.jsx']
     // alias: {
     //   libs: __dirname + jsPath + '/h5/js/tools/libs/',
     //   weight: __dirname + '/h5/js/tools/weight/',
     //   src: __dirname + '/h5/js/src/'
     // }
   },
+  // eslint: {
+  //   configFile: path.join(__dirname, './.eslintrc.json')
+  // },
   watch: true,
   plugins: [
+    new webpack.ProvidePlugin({
+      react: 'react'
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ]
