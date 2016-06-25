@@ -2,30 +2,204 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac4f4c49-cfdb-40f9-ac4a-61044d92d5ed" name="Default" comment="sequelize update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app/h5/src/actions/type/typeListA.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app/h5/src/container/type/typeList.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app/h5/src/run/httpResources.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app/h5/src/run/routerConfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app/h5/src/run/run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app/h5/src/store/type/typeListService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app/h5/src/utils/formDate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app/h5/view/typeList.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.7c7780ba906d2adffd94.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.d4c7cb10188fcfeac77a.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/7c7780ba906d2adffd94.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.00aa286c29a836dc46ef.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.037cb3c323e6fb7b86e9.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.04213b1bda8f13de5dd0.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.04593b3089148d8c02a3.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.04d63303fcfc6c6fae65.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.07e208f4e0fdfe2d54c4.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.1049dba2302df0d5a2b7.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.194736facf803920c8b6.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.1a53484b0bc5cd162ab1.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.1f85b808dbdba16752b2.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.1fff8dfdeaac66528e2f.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.2051ef76af2a5fc6c32e.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.24db433e76965bb4ee83.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.26349e8118b7849d4c28.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.28ab99ea0591ddd2969c.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.2c47c4cc6ba1c2ae70c7.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.2f9187eb5837f6014bad.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.31fab2250b5e5fd64495.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.322ad337a62739f6d0ea.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.39cd903b2372b49734ec.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.3bf7f6927d5eae30ba70.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.3c319ed74dedaaafba92.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.3cb8c1e053a7bced06ff.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.3d0608b9a4967643ebc8.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.40d003f14c663f575bed.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.411fd47d9b63522338d6.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.41a671bb7f535eb630bb.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.41c96306f51d90d47b7a.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.45532cfa8e7542334bed.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.457ec8fba3b01fc77691.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.4a19dc2b24361405dc41.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.4a64d3780a6c19949402.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.4bb8a7f71512a091900d.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.553c7f5f5b442935dcf7.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.5560402ef291d1eca6b3.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.5a35163f2ba072d2b748.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.5dfbd1d17bee778c1db3.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.61fca112ea3b2c7b6c24.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.64bd70702c2da49cf66f.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.66a20ab480bbc7d1d7fc.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.6a3a3552f84aa8c40904.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.7036bb0139e27140dad0.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.7530c3ccfb3c0b85791a.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.79a9dc7df5c66a805299.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.7b0a15c0ef5d695f5e10.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.7c1f3deb137de2a2864c.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.7c871ea51d5130acb7d0.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.7c8c717cc10985aaafa4.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.7d324607f5c5b4de72fb.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.7e51a79761dc0489c647.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.7eba046eed3756b8b579.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.7f505d1103b040b8919e.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.82b963d236627fde5148.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.850d113cbb897df60fca.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.923179c8fb9a5abad910.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.932ac46b919ed4dee3fe.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.98c2b0b63bfd2a5fc57b.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.9c4253f03bea32091a45.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.9fcc29fa43085ce53454.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.a170d2ca05998010f3bd.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.a2668175beac665c9c9f.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.a47db03bd7839d115682.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.a66ea5393deebd017758.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.a700d89b67bb61ea8ed2.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.a9cba5e59d3ea7d8a2db.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.b11f9869edff5d2626ae.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.b1253b3b6a096ebb3a22.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.b17bf67a6f22e945eb65.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.b42f9aa2b85cc38ba96c.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.b47bca7577c71b9c7c14.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.b6465546005d1cd5f3d8.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.b6718b692cb74ace9642.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.d6a9055ee387f866543c.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.db37aad99d3209fee68c.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.dd18b91d3d40163c10ce.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.e09966959e23eefebd53.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.e0f1f1d966f671e2b6dc.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.e242d708101a0cd22782.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.e4118d35fc338f22b7e8.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.e422054a26326c1a3c08.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.e88f5659b679188a0f2a.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.e8e52653ec8605fb133b.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.ea888009ddb1ed8ced05.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.ebaee36fa69d66ee0370.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.ed8d8f95fbf8d149ae19.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.f2b99745ae60dab3c6c2.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.f5091ab588172210c060.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.f525cabbea1df0c05100.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.f55b5d5e6876db7a33df.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.fb29e03dcce689ffea73.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.fcd28990eeb6c0162942.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/0.ff1bd3a852e9a0ddd779.hot-update.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/005870b902393129ba84.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/00aa286c29a836dc46ef.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/037cb3c323e6fb7b86e9.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/04213b1bda8f13de5dd0.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/04593b3089148d8c02a3.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/04d63303fcfc6c6fae65.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/07e208f4e0fdfe2d54c4.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/1049dba2302df0d5a2b7.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/1198e01d99c391d2b981.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/194736facf803920c8b6.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/1a53484b0bc5cd162ab1.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/1f85b808dbdba16752b2.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/1fff8dfdeaac66528e2f.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/2051ef76af2a5fc6c32e.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/24db433e76965bb4ee83.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/26349e8118b7849d4c28.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/28ab99ea0591ddd2969c.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/2c47c4cc6ba1c2ae70c7.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/2f9187eb5837f6014bad.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/31fab2250b5e5fd64495.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/322ad337a62739f6d0ea.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/39cd903b2372b49734ec.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/3bf7f6927d5eae30ba70.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/3c319ed74dedaaafba92.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/3cb8c1e053a7bced06ff.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/3d0608b9a4967643ebc8.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/40d003f14c663f575bed.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/411fd47d9b63522338d6.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/41a671bb7f535eb630bb.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/41c96306f51d90d47b7a.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/45532cfa8e7542334bed.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/457ec8fba3b01fc77691.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/4a19dc2b24361405dc41.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/4a64d3780a6c19949402.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/4bb8a7f71512a091900d.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/553c7f5f5b442935dcf7.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/5560402ef291d1eca6b3.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/5a35163f2ba072d2b748.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/5dfbd1d17bee778c1db3.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/61fca112ea3b2c7b6c24.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/64bd70702c2da49cf66f.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/66663d5e12d5cf8aad45.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/66a20ab480bbc7d1d7fc.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/6a3a3552f84aa8c40904.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/7036bb0139e27140dad0.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/7530c3ccfb3c0b85791a.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/79a9dc7df5c66a805299.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/7b0a15c0ef5d695f5e10.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/7c1f3deb137de2a2864c.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/7c871ea51d5130acb7d0.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/7c8c717cc10985aaafa4.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/7d324607f5c5b4de72fb.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/7e51a79761dc0489c647.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/7eba046eed3756b8b579.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/7f505d1103b040b8919e.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/81c8e70d814b1768d161.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/82b963d236627fde5148.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/850d113cbb897df60fca.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/8d511ce729f064e0e60e.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/923179c8fb9a5abad910.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/932ac46b919ed4dee3fe.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/98c2b0b63bfd2a5fc57b.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/9c4253f03bea32091a45.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/9fcc29fa43085ce53454.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/a170d2ca05998010f3bd.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/a2668175beac665c9c9f.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/a47db03bd7839d115682.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/a66ea5393deebd017758.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/a700d89b67bb61ea8ed2.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/a9cba5e59d3ea7d8a2db.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/b11f9869edff5d2626ae.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/b1253b3b6a096ebb3a22.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/b17bf67a6f22e945eb65.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/b42f9aa2b85cc38ba96c.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/b47bca7577c71b9c7c14.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/b6465546005d1cd5f3d8.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/b6718b692cb74ace9642.hot-update.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/d4c7cb10188fcfeac77a.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/app/h5/src/components/list/bulkList.jsx" afterPath="$PROJECT_DIR$/app/app/h5/src/components/list/pageList.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/d35644504c5a063ed17c.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/d6a9055ee387f866543c.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/db37aad99d3209fee68c.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/dd18b91d3d40163c10ce.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/dff9876dc9eacf616709.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/e09966959e23eefebd53.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/e0f1f1d966f671e2b6dc.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/e242d708101a0cd22782.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/e4118d35fc338f22b7e8.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/e422054a26326c1a3c08.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/e88f5659b679188a0f2a.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/e8e52653ec8605fb133b.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/ea888009ddb1ed8ced05.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/ebaee36fa69d66ee0370.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/ed8d8f95fbf8d149ae19.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/f2b99745ae60dab3c6c2.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/f3688371a872135d6860.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/f5091ab588172210c060.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/f525cabbea1df0c05100.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/f55b5d5e6876db7a33df.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/f928ee4d11ce8fa0ba2b.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/fb29e03dcce689ffea73.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/fcd28990eeb6c0162942.hot-update.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/h5/build/ff1bd3a852e9a0ddd779.hot-update.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app/h5/src/app.js" afterPath="$PROJECT_DIR$/app/app/h5/src/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app/h5/view/type.html" afterPath="$PROJECT_DIR$/app/app/h5/view/type.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app/webpack.config.js" afterPath="$PROJECT_DIR$/app/app/webpack.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app/webpack.dev.config.js" afterPath="$PROJECT_DIR$/app/app/webpack.dev.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/index/articlesList.js" afterPath="$PROJECT_DIR$/models/index/articlesList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app/h5/src/run/routerConfig.js" afterPath="$PROJECT_DIR$/app/app/h5/src/run/routerConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app/h5/src/run/run.js" afterPath="$PROJECT_DIR$/app/app/h5/src/run/run.js" />
     </list>
     <ignored path="blogs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,68 +220,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="formDate.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app/h5/src/utils/formDate.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app/h5/src/run/run.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
-              <folding>
-                <element signature="e#72#97#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routerConfig.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/app/h5/src/run/routerConfig.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#42#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="typeList.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app/h5/src/container/type/typeList.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#84#122#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app/h5/src/container/type/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pageList.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app/h5/src/components/list/pageList.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+            <state relative-caret-position="150">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#43#81#0" expanded="true" />
@@ -116,21 +233,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="typeList.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app/h5/view/typeList.html">
+      <file leaf-file-name="run.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/app/h5/src/run/run.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+            <state relative-caret-position="150">
+              <caret line="13" column="81" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -142,6 +249,31 @@
             <state relative-caret-position="30">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routerConfig.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/app/h5/src/run/routerConfig.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
+                <marker date="1466828546000" expanded="true" signature="61:263" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/app/h5/src/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,20 +310,20 @@
         <option value="$PROJECT_DIR$/app/app/webpack.dev.config.js" />
         <option value="$PROJECT_DIR$/app/app/h5/src/store/type/typeListService.js" />
         <option value="$PROJECT_DIR$/app/app/h5/src/container/type/typeList.js" />
-        <option value="$PROJECT_DIR$/app/app/h5/src/container/type/index.js" />
         <option value="$PROJECT_DIR$/app/app/h5/src/actions/type/typeListA.js" />
         <option value="$PROJECT_DIR$/app/app/h5/src/utils/date.js" />
-        <option value="$PROJECT_DIR$/app/app/h5/src/utils/index.js" />
         <option value="$PROJECT_DIR$/app/app/h5/src/utils/formDate.js" />
         <option value="$PROJECT_DIR$/app/app/h5/src/components/list/pageList.jsx" />
         <option value="$PROJECT_DIR$/app/app/h5/src/api/httpResources.js" />
         <option value="$PROJECT_DIR$/app/app/h5/src/run/router.js" />
-        <option value="$PROJECT_DIR$/app/app/h5/src/app.js" />
         <option value="$PROJECT_DIR$/app/app/h5/src/run/a.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/app/app/h5/src/container/type/typeList.jsx" />
-        <option value="$PROJECT_DIR$/app/app/h5/src/run/run.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/app/app/h5/src/container/type/index.js" />
+        <option value="$PROJECT_DIR$/app/app/h5/src/utils/index.js" />
         <option value="$PROJECT_DIR$/app/app/h5/src/run/routerConfig.js" />
+        <option value="$PROJECT_DIR$/app/app/h5/src/run/run.js" />
+        <option value="$PROJECT_DIR$/app/app/h5/src/app.js" />
       </list>
     </option>
   </component>
@@ -232,8 +364,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -358,6 +488,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="h5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="run" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -396,8 +556,78 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="h5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="list" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blogs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="h5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="type" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -517,6 +747,10 @@
       <workItem from="1466651497738" duration="18547000" />
       <workItem from="1466727716439" duration="2158000" />
       <workItem from="1466732972348" duration="25036000" />
+      <workItem from="1466779573528" duration="13000" />
+      <workItem from="1466781082486" duration="1140000" />
+      <workItem from="1466817785127" duration="15000" />
+      <workItem from="1466817870314" duration="3438000" />
     </task>
     <task id="LOCAL-00001" summary="sequelize update">
       <created>1466211786791</created>
@@ -536,7 +770,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60749000" />
+    <option name="totallyTimeSpent" value="65355000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -548,21 +782,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="731" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="731" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33020344" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3317684" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33020344" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43348983" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43192488" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -738,7 +972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="5101" column="4" selection-start-line="5101" selection-start-column="4" selection-end-line="5101" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
           <caret line="133" column="3" selection-start-line="133" selection-start-column="3" selection-end-line="133" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,7 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,7 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1095">
           <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -800,7 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="99" column="21" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -808,17 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app/h5/src/actions/type/typeListA.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -826,9 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -836,7 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="6" selection-start-line="14" selection-start-column="11" selection-end-line="31" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,7 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,7 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -860,7 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -868,7 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,7 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,40 +1093,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app/h5/src/run/a.js">
+    <entry file="file://$PROJECT_DIR$/app/app/h5/src/run/a.js" />
+    <entry file="file://$PROJECT_DIR$/app/app/h5/view/typeList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="345">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app/h5/src/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="111" column="23" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
+          <folding>
+            <marker date="1466822388000" expanded="true" signature="1715:2316" placeholder="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app/h5/src/container/type/index.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app/h5/view/typeList.html">
+    <entry file="file://$PROJECT_DIR$/app/app/h5/src/container/type/typeList.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="90">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#84#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app/h5/src/utils/formDate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app/h5/src/actions/type/typeListA.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app/h5/src/components/list/pageList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app/h5/src/run/run.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="81" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
           <folding />
         </state>
       </provider>
@@ -930,60 +1176,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app/h5/src/components/list/pageList.jsx">
+    <entry file="file://$PROJECT_DIR$/app/app/h5/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app/h5/src/container/type/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app/h5/src/container/type/typeList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#84#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app/h5/src/utils/formDate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app/h5/src/run/run.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
-          <folding>
-            <element signature="e#72#97#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app/h5/src/run/routerConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="90">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
+            <marker date="1466828546000" expanded="true" signature="61:263" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -11,7 +11,7 @@ import { Router, Route, Link } from 'react-router'
 const routeConfigObj = [
     { path: routerConfig.routerDefault.url,
         component: routerConfig.routerDefault.component,
-        indexRoute: { component: routerConfig.routerDefault.component },
+        indexRoute: { component: routerConfig.routerDefault.defaultIndexComponent },
         childRoutes: [
 
         ]
@@ -19,10 +19,9 @@ const routeConfigObj = [
 ];
 
 //configProvider
-console.log(routerConfig)
 const configInjection = (itemData,tarData) => {
     itemData.forEach((item)=>{
-        var routerItemData = {
+        const routerItemData = {
             path        : item.url,
             component   : item.component
         };
@@ -36,4 +35,5 @@ const configInjection = (itemData,tarData) => {
     return tarData;
 };
 configInjection(routerConfig.router,routeConfigObj[0]);
-render(<Router routes={routeConfigObj} />, document.body)
+console.log(routerConfig)
+// render(<Router routes={routeConfigObj} />, document.body);
