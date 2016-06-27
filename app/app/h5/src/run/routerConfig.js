@@ -3,11 +3,24 @@
  */
 export default{
    routerDefault : {
-      url : '/',component : '',defaultIndexComponent : ''
+      url : '/',
+      getComponent : () => {
+         require('../container/a');
+      },
+      defaultGetIndexComponent : require('../container/c')
    },
    router : [
       {
-         url : '/h5/type.html',component : require('../container/type/typeList.jsx')
+         url : 'type.html',
+         getComponent : () => {
+            require('../container/type/typeList.jsx')
+         }
+      },
+      {
+         url : 'type1.html',
+         getComponent : () => {
+            require('../container/c')
+         }
       }
    ]
 }

@@ -15,11 +15,12 @@ class TypePageList extends PageList{
             itemClickCallback : this.itemClickCallback
         };
     }
-    itemClickCallback(evt,item){
+    itemClickCallback(item,evt){
         // location.href =
+        console.log(item);
     }
     async getListNavData(){
-        const reqData = await typeListActions.datumListNavData();
+        let reqData = await typeListActions.datumListNavData();
         this.setState({data: reqData.data});
     }
     componentWillMount(){

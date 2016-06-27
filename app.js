@@ -69,8 +69,8 @@ app.post('/ccap/code',function(req,res) {
 
 app.use(function(req, res, next) {
     if(req.url.indexOf('h5') > -1){
-        var viewName = req.url.substr(req.url.indexOf('h5') + 2 ,req.url.length);
-        res.sendfile(path.join(__dirname, './app/app/h5/view' + viewName));
+        // var viewName = req.url.substr(req.url.indexOf('h5') + 2 ,req.url.length);
+        res.sendfile(path.join(__dirname, './app/app/h5/view/type.html'));
     }else{
         var err = new Error('Not Found');
         err.status = 404;

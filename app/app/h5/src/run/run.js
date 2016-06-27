@@ -1,16 +1,19 @@
 /**
  * Created by kangdaye on 16/6/24.
  */
-var path = require('path');
-
 import React from 'react'
 import { render } from 'react-dom'
 import routerConfig from './routerConfig.js'
-import { Router, Route, Link } from 'react-router'
+import { Router,useRouterHistory} from 'react-router'
+import { createHistory } from 'history'
+
+const history = useRouterHistory(createHistory)({
+   basename: '/h5/'
+});
 
 const routeConfigObj = [
     { path: routerConfig.routerDefault.url,
-        component: routerConfig.routerDefault.component,
+        getComponent : routerConfig.routerDefault.getComponent,
         indexRoute: { component: routerConfig.routerDefault.defaultIndexComponent },
         childRoutes: [
 
@@ -18,12 +21,11 @@ const routeConfigObj = [
     }
 ];
 
-//configProvider
 const configInjection = (itemData,tarData) => {
     itemData.forEach((item)=>{
         const routerItemData = {
-            path        : item.url,
-            component   : item.component
+            path            : item.url,
+            getComponent    : item.getComponent
         };
 
         if (item.childRoutes){
@@ -35,5 +37,5 @@ const configInjection = (itemData,tarData) => {
     return tarData;
 };
 configInjection(routerConfig.router,routeConfigObj[0]);
-console.log(routerConfig)
-// render(<Router routes={routeConfigObj} />, document.body);
+
+render(<Router history={history} routes={routeConfigObj} />, document.getElementById('main'));

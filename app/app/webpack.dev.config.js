@@ -17,9 +17,6 @@ module.exports = {
     publicPath: __dirname + '/h5/build/'
   },
   module: {
-    // preLoaders: [
-    //   { test: /\.js$|\.jsx$/, loader: "eslint-loader", exclude: /node_modules/ }
-    // ],
     loaders: [
       { test: /\.js?$|\.jsx$/,
         loader: 'babel-loader',
