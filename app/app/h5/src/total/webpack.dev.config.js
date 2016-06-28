@@ -1,20 +1,21 @@
 var webpack = require('webpack');
 var path = require('path');
-var jsPath = '/h5/src/';
+var config = require('./config');
+// var jsPath = '/h5/src/';
 
 module.exports = {
-  // context : __dirname,
+  context : __dirname,
   // entry: './js/entry.js',
   entry: [
       'babel-polyfill',
-      path.join(__dirname, jsPath + "app.js")
-    // 'webpack-dev-server/client?http://127.0.0.1:3000',
-    // 'webpack/hot/only-dev-server',
+      '../app.js',
+     'webpack-dev-server/client?'+ config.path +':' + config.port,
+     'webpack/hot/only-dev-server'
   ],
   output: {
-    path: __dirname + '/h5/build/',
+    path: __dirname + '/h5/build/',    //资源文件输出地址
     filename: 'bundle.js',
-    publicPath: __dirname + '/h5/build/'
+    publicPath: '/h5/build/'   //资源文件地址
   },
   module: {
     loaders: [
@@ -39,11 +40,9 @@ module.exports = {
   // eslint: {
   //   configFile: path.join(__dirname, './.eslintrc.json')
   // },
-  watch: true,
   plugins: [
-    new webpack.ProvidePlugin({
-      react: 'react'
-    }),
+    // new webpack.OccurenceOrderPlugin(),   //引用次数的大小减少代码量
+    // new webpack.AggressivieMerginPlugin(),   //减少代码,合并相识的代码
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ]
