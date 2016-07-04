@@ -12,30 +12,12 @@ const history = useRouterHistory(createHistory)({
 });
 
 const routeConfigObj = [
-    { path: routerConfig.routerDefault.url,
+    {
+        path: routerConfig.routerDefault.url,
         getComponent : routerConfig.routerDefault.getComponent,
         indexRoute: { component: routerConfig.routerDefault.defaultIndexComponent },
-        childRoutes: [
-
-        ]
+        childRoutes: routerConfig.router
     }
 ];
 
-const configInjection = (itemData,tarData) => {
-    itemData.forEach((item)=>{
-        const routerItemData = {
-            path            : item.url,
-            getComponent    : item.getComponent
-        };
-
-        if (item.childRoutes){
-            routerItemData.childRoutes = [];
-            configInjection(item.childRoutes,routerItemData);
-        }
-        tarData.childRoutes.push(routerItemData);
-    });
-    return tarData;
-};
-configInjection(routerConfig.router,routeConfigObj[0]);
-
-render(<Router history={history} routes={routeConfigObj} />, document.getElementById('main'));
+render(<Router history={history} routes={routeConfigObj} />, document.getElementById('router'));

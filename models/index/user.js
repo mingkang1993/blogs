@@ -4,7 +4,7 @@
 
 var express = require('express');
 var crypto = require("crypto");
-var multer  = require('multer');
+// var multer  = require('multer');
 var nodemailer = require("nodemailer");
 var roult = express.Router();
 var users = require("../../database/datasTable/user");

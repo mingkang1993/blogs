@@ -198,6 +198,7 @@ KindEditor.plugin('image', function(K) {
 					if (self.afterUpload) {
 						self.afterUpload.call(self, url, data, name);
 					}
+
 					if (!fillDescAfterUploadImage) {
 						clickFn.call(self, url, data.title, data.width, data.height, data.border, data.align);
 					} else {

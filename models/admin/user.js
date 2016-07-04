@@ -2,7 +2,7 @@
  * Created by T-30 on 2015-2-12.
  */
 var express = require('express');
-var multer  = require('multer');
+// var multer  = require('multer');
 var app = express.Router();
 var users = require("../../database/datasTable/user");
 var db = require("../../database/settings");

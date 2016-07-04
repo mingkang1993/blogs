@@ -1,11 +1,12 @@
 var express = require('express');
 var path = require('path');
+var fs = require('fs');
 /*var favicon = require('serve-favicon');*/
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var crypto = require("crypto");
-var multer  = require('multer');
+var formidable = require('formidable');
 var ccap = require('ccap')();//Instantiated ccap class
 var session = require('express-session');
 
@@ -16,17 +17,10 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
 app.use(express.static(path.join(__dirname, 'app/app')));
 app.use(express.static(path.join(__dirname, 'app')));
 
-app.use(multer({
-    dest: './app/uploads/images/',
-    renPath: function (path,name) {
-        //return path.replace(/([\s\S]*[\\])*resource[\\]/, '').toLowerCase() + name
-        return '../../uploads/images/' + name
-    }
-  }
-));
 
 app.use(session({
     secret: '1234567890mmdapp1234567890',
@@ -50,7 +44,6 @@ app.use('/', require("./models/index/personal"));
 app.use('/', require("./models/admin/user"));
 app.use('/', require("./models/admin/fqa"));
 
-var cookieData ={};
 var code = "";
 
 
@@ -65,6 +58,28 @@ app.post('/ccap/code',function(req,res) {
         text : txt
     });
 });
+
+
+app.post('/uploadImg',function(req,res) {
+    var form = new formidable.IncomingForm();
+
+    form.encoding = 'utf-8';		//设置编辑
+    form.uploadDir = path.join(__dirname, 'app/upload/images');	 //设置上传目录
+    form.keepExtensions = true;	 //保留后缀
+    form.maxFieldsSize = 2 * 1024 * 1024;   //文件大小
+
+    form.parse(req, function(err, fields, files) {
+        if(files){
+            res.writeHeader(200, {'Content-Type': 'text/html;charset=utf-8'});
+            res.end(JSON.stringify({ "error": 0, "url": files.imgFile.path.match(/\/upload.*$/)[0] }));
+        }else{
+            res.writeHeader(200, {'Content-Type': 'text/html;charset=utf-8'});
+            res.end(JSON.stringify({ "error": 1, "message": '上传文件失败' }));
+        }
+    });
+
+});
+
 
 
 app.use(function(req, res, next) {
@@ -106,22 +121,6 @@ app.post('/articlesList',function(req,res) {
  */
 
 
-
-
-
-app.post('/uploadImg',function(req,res) {
-    var file_data = '';
-    if(req.files && req.files.imgFile && req.files.imgFile.size > 0){
-        file_data = req.files.imgFile;
-    }
-    if(file_data){
-        res.writeHeader(200, {'Content-Type': 'text/html;charset=utf-8'});
-        res.end(JSON.stringify({ "error": 0, "url": file_data.path }));
-    }else{
-        res.writeHeader(200, {'Content-Type': 'text/html;charset=utf-8'});
-        res.end(JSON.stringify({ "error": 1, "message": '上传文件失败' }));
-    }
-});
 
 
 

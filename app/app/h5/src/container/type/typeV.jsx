@@ -1,27 +1,22 @@
 /**
  * Created by kangdaye on 16/6/22.
  */
-// import React,{ReactDom} from 'react';
 import React,{Component} from 'react';
 import { render } from 'react-dom'
-import PageList from '../../components/list/pageList.jsx';
-import * as typeListActions from '../../actions/type/typeListA';
+import PageList from 'components/list/pageList.jsx';
+import * as typeActions from 'actions/type/typeA';
 
 class TypePageList extends PageList{
     constructor(props) {
         super(props);
         this.state = {
             data : [],
-            itemClickCallback : this.itemClickCallback
+            itemClickCallback : typeActions.listClick
         };
     }
-    itemClickCallback(item,evt){
-        // location.href =
-        console.log(item);
-    }
     async getListNavData(){
-        let reqData = await typeListActions.datumListNavData();
-        this.setState({data: reqData.data});
+        let reqData = await typeActions.datumListNavData();
+        this.setState({data: reqData});
     }
     componentWillMount(){
         this.getListNavData();

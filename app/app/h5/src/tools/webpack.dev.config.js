@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var config = require('./config');
-// var jsPath = '/h5/src/';
+var srcPath = '/h5/src/';
 
 module.exports = {
   context : __dirname,
@@ -30,12 +30,14 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
-    // alias: {
-    //   libs: __dirname + jsPath + '/h5/js/tools/libs/',
-    //   weight: __dirname + '/h5/js/tools/weight/',
-    //   src: __dirname + '/h5/js/src/'
-    // }
+    extensions: ['', '.js', '.jsx'],
+    alias: {
+      actions     : path.join(__dirname, '../actions'),
+      components  : path.join(__dirname, '../components'),
+      container   : path.join(__dirname, '../container'),
+      api         : path.join(__dirname, '../api'),
+      utils       : path.join(__dirname, '../utils')
+    }
   },
   // eslint: {
   //   configFile: path.join(__dirname, './.eslintrc.json')

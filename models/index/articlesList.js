@@ -3,7 +3,7 @@
  */
 
 var express = require('express');
-var multer  = require('multer');
+// var multer  = require('multer');
 var app = express.Router();
 var db = require("../../database/settings");
 /*articles*/
@@ -134,7 +134,7 @@ app.post('/addArticle/praise',function(req,res) {        //点赞
 });
 
 
-app.post('/addArticle/listNavClick',function(req,res) {  //listNav点击加载列表
+app.post('/article/list',function(req,res) {  //listNav点击加载列表
     var offset = req.body.offsetNum;
     if(req.body.id == 0){
         article.findAll({

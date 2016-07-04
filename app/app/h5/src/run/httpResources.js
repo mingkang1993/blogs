@@ -7,10 +7,8 @@ import axios from 'axios'
 
 axios.defaults.baseURL = '/';
 
-
 //请求的参数
 axios.interceptors.request.use((config) => {
-    console.log(config)
     config.headers = config.headers || {};
     // if (getCookie('token')) {
     //     config.headers.Authorization = 'Bearer ' + getCookie('token').replace(/(^\")|(\"$)/g, '')
@@ -28,7 +26,7 @@ axios.interceptors.response.use((response) => {
     //     signOut()
     //     window.location.pathname = '/login'
     // }
-    return response
+    return Promise.resolve(response.data);
 }, (error) => {
     // Do something with response error
     return Promise.reject(error)

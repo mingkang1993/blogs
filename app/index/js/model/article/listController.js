@@ -16,7 +16,7 @@ myAppModule.controller('articleListController',['$scope','article','$timeout','$
                     model : 'select'
                 };
         }else{
-                url = "/addArticle/listNavClick";
+                url = "/article/list";
                 data = {
                     id : $scope.id
                 };

@@ -2,7 +2,7 @@
  * Created by kangdaye on 16/6/15.
  */
 import React,{Component} from 'react';
-import * as util from '../../utils';
+import * as util from 'utils';
 
 export default class PageList extends Component{
     constructor(props){

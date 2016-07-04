@@ -11,13 +11,19 @@ export default{
    },
    router : [
       {
-         url : 'type.html',
+         path : 'type.html',
          getComponent : () => {
-            require('../container/type/typeList.jsx')
+            require('../container/type/typeV.jsx')
          }
       },
       {
-         url : 'type1.html',
+         path : 'type/list.html',
+         getComponent : () => {
+            require('../container/type/typeListV.jsx')
+         }
+      },
+      {
+         path : 'type1.html',
          getComponent : () => {
             require('../container/c')
          }
